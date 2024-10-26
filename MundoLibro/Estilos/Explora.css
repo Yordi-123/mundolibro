@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-uno: #ffffff;
+    --color-dos: #f9b17a;
+    --color-azul1: #676f9d;
+    --color-azul2: #424769;
+    --color-azul3: #2d3250;
+}
+
+body {
+    background-color: var(--color-azul2);
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-uno);
+    
+}
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-azul3);
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu_item {
+    font-size: 18px;
+    padding: 20px;
+    color: var(--color-uno);
+    font-weight: 700;
+    display: block;
+}
+.menu_item:hover{
+    color: var(--color-dos);
+}
+/* explorar  */
+.explorar {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.explorar .list .item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.explorar .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explorar .list .item .content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.explorar .list .item .content .titulo,
+.explorar .list .item .content .type {
+    font-size: 4.5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.explorar .list .item .type {
+    color: var(--color-dos);
+}
+
+.explorar .list .item .button {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.button a{
+    color: black;
+}
+.explorar .list .item .button button {
+    border: none;
+    background-color: var(--color-dos);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 2px;
+}
+
+.explorar .list .item .button button:hover {
+    letter-spacing: 3px;
+}
+
+.explorar .list .item .button button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #eee;
+}
+
+/* miniatura */
+.miniatura {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.miniatura .item {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.miniatura .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* botones  */
+.botones {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 1;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.botones button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-dos);
+    border: none;
+    color: black;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: var(--color-azul1);
+    color: #000;
+}
+
+/* animacion */
+.explorar .list .item:nth-child(1) {
+    z-index: 1;
+}
+
+/* animacion texto*/
+.explorar .list .item:nth-child(1) .content .titulo,
+.explorar .list .item:nth-child(1) .content .type,
+.explorar .list .item:nth-child(1) .content .descripcion,
+.explorar .list .item:nth-child(1) .content .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.explorar .list .item:nth-child(1) .content .titulo {
+    animation-delay: 0.4s !important;
+}
+
+.explorar .list .item:nth-child(1) .content .type {
+    animation-delay: 0.6s !important;
+}
+
+.explorar .list .item:nth-child(1) .content .descripcion {
+    animation-delay: 0.8s !important;
+}
+
+.explorar .list .item:nth-child(1) .content .buttons {
+    animation-delay: 1s !important;
+}
+
+.descripcion {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    background-color: #4e4b5076;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.des-venta {
+    color: red;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Animación el botón SIGUIENTE */
+.explorar.siguiente .list .item:nth-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+@keyframes showImage {
+    to {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.explorar.siguiente .miniatura .item:nth-last-child(1) {
+    overflow: hidden;
+    animation: showMiniatura .5s linear 1 forwards;
+}
+
+.explorar.atras .list .item img {
+    z-index: 1;
+}
+
+
+@keyframes showMiniatura {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.explorar.siguiente .miniatura {
+    animation: effectSiguiente .5s linear 1 forwards;
+}
+
+@keyframes effectSiguiente {
+    from {
+        transform: translateX(150px);
+    }
+}
+
+/* animación el botón ATRAS */
+.explorar.atras .list .item:nth-child(2) {
+    z-index: 2;
+}
+
+.explorar.atras .list .item:nth-child(2) img {
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes outFrame {
+    to {
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.explorar.atras .miniatura .item:nth-child(1) {
+    overflow: hidden;
+    opacity: 0;
+    animation: showMiniatura .5s linear 1 forwards;
+}
+
+.explorar.siguiente .botones button,
+.explorar.atras .botones button {
+    pointer-events: none;
+}
+
+
+.explorar.atras .list .item:nth-child(2) .content .titulo,
+.explorar.atras .list .item:nth-child(2) .content .type,
+.explorar.atras .list .item:nth-child(2) .content .descripcion,
+.explorar.atras .list .item:nth-child(2) .content .buttons {
+    animation: contentOut 1.5s linear 1 forwards !important;
+}
+
+@keyframes contentOut {
+    to {
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+/** footer */
+.footer {
+	margin-top: 50px;
+	padding: 50px 0;
+	background-color: var(--color-azul2);
+}
+.footer-content {
+	display: flex;
+	justify-content: space-around;
+}
+.link h3 {
+	font-size: 18px;
+	color: var(--color-dos);
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.link a {
+	font-size: 16px;
+	color: white;
+	display: block;
+	margin-bottom: 10px;
+}
+.link a:hover{
+	color: var(--color-dos);
+}
+.footer_imgs a {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.footer_imgs {
+    display: flex;
+	flex-direction: column; 
+    gap: 10px; 
+}
+.footer_imgs img {
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
+    display: block; 
+	margin-right: 10px;
+}
+.footer_imgs-pago img{
+	width: 70px;
+	height: 35px;
+	
+}

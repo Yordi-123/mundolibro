@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/Productos.css">
+    <title>Productos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+
+            <a href="#" class="logo"><img src="../img/logo.png" alt="" width="40px"></a>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="menu_item" href="../Index/index.html">Inicio</a></li>
+                    <li><a class="menu_item" href="../Index/index.html#nosotros">Nosotros</a></li>
+                    <li><a class="menu_item" href="../Index/Productos.html">Productos</a></li>
+                    <li><a class="menu_item" href="../Index/Explora.html">Explora</a></li>
+                    <li><a class="menu_item" href="../Index/Preguntas.html">Preguntas Frecuentes</a></li>
+                    <li><a class="menu_item" href="../Index/Reclamos.html">Reclamos</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <a href="#"><img src="../img/carrito-de-compras.png" id="img-carrito" alt="carrito" width="40px"></a>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Los productos que seleciomo podre verlo aqui -->
+                                </tbody>
+                            </table>
+                            <p id="total" class="total">Total: S/. 0</p>
+                            <button id="vaciar-carrito" class="btn-2">Vaciar Carrito</button>
+                            <button id="procesar-compra" class="btn-2">Procesar Compra</button>
+                            <button id="cambiar-nombre" class="btn-2">Cambiar Usuario</button>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+
+    <main class="products container" id="lista-1">
+        <h1 class="txt__titulo"><span class="txt__titulo txt__titulo-span">NUESTROS</span> PRODUCTOS</h1>
+
+        <div class="product-content">
+
+            <div class="product" id="1984">
+                <img src="../img/1984.png" alt="">
+                <div class="product-txt">
+                    <h3>1984</h3>
+                    <p>George Orwell</p>
+                    <p class="precio">S/. 45</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/Nada.png" alt="">
+                <div class="product-txt">
+                    <h3>Nada</h3>
+                    <p>Carmen Laforet</p>
+                    <p class="precio">S/. 30</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="elalquimista">
+                <img src="../img/ElAlquimista.webp" alt="">
+                <div class="product-txt">
+                    <h3>El Alquimista</h3>
+                    <p>Paulo Coelho</p>
+                    <p class="precio">S/. 70</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/LaDivinaComedia.png" alt="">
+                <div class="product-txt">
+                    <h3>La Divina Comedia</h3>
+                    <p>Dante Alighieri</p>
+                    <p class="precio">S/. 30</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="cienaños">
+                <img src="../img/CienAñosSoledad.webp" alt="">
+                <div class="product-txt">
+                    <h3>Cien Años de Soledad</h3>
+                    <p>Gabriel García Márquez</p>
+                    <p class="precio">S/. 75</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/ElPrincipito.png" alt="">
+                <div class="product-txt">
+                    <h3>El Principito</h3>
+                    <p>Antoine de Saint-Exupéry</p>
+                    <p class="precio">S/. 40</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/ElRetrato.png" alt="">
+                <div class="product-txt">
+                    <h3>El retrato de Dorian Grey</h3>
+                    <p>Oscar Wilde</p>
+                    <p class="precio">S/. 30</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/UnMundoFeliz.webp" alt="">
+                <div class="product-txt">
+                    <h3>Un Mundo Feliz</h3>
+                    <p>Aldous Huxley</p>
+                    <p class="precio">S/. 45</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="sangrefria">
+                <img src="../img/AsangreFria.webp" alt="">
+                <div class="product-txt">
+                    <h3>A Sangre Fría</h3>
+                    <p>Truman Capote</p>
+                    <p class="precio">S/. 40</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/CumbresBorrascosas.png" alt="">
+                <div class="product-txt">
+                    <h3>Cumbres Borrascosas</h3>
+                    <p>Emily Bronte</p>
+                    <p class="precio">S/. 35</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/Rayuela.png" alt="">
+                <div class="product-txt">
+                    <h3>Rayuela</h3>
+                    <p>Julio Cortázar</p>
+                    <p class="precio">S/. 40</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/Mujercitas.png" alt="">
+                <div class="product-txt">
+                    <h3>Mujercitas</h3>
+                    <p>Louise May Alcott</p>
+                    <p class="precio">S/. 30</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="donquijote">
+                <img src="../img/DonQuijote.png" alt="">
+                <div class="product-txt">
+                    <h3>Don Quijote De La Mancha</h3>
+                    <p>Miguel de Cervantes</p>
+                    <p class="precio">S/. 80</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="13">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="eldiario">
+                <img src="../img/AnaFrank.png" alt="">
+                <div class="product-txt">
+                    <h3>El Diario de Ana Frank</h3>
+                    <p>Ana Frank</p>
+                    <p class="precio">S/. 30</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="14">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/ElgranGatsby.png" alt="">
+                <div class="product-txt">
+                    <h3>El gran Gatsby</h3>
+                    <p>F. Scott Fitzgerald</p>
+                    <p class="precio">S/. 30</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="15">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="coquito">
+                <img src="../img/coquito.png" alt="">
+                <div class="product-txt">
+                    <h3>Coquito</h3>
+                    <p>Don Everardo Zapata</p>
+                    <p class="precio">S/. 15</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="16">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="../img/Metamorfosis.webp" alt="">
+                <div class="product-txt">
+                    <h3>La Metamorfosis</h3>
+                    <p>Franz Kafka</p>
+                    <p class="precio">S/. 60</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="17">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="arteguerra">
+                <img src="../img/ArtedelaGuerra.png" alt="">
+                <div class="product-txt">
+                    <h3>El Arte De La Guerra</h3>
+                    <p>Sun Tzu</p>
+                    <p class="precio">S/. 50</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="18">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="riosprofundos">
+                <img src="../img/riosprofundos.webp" alt="">
+                <div class="product-txt">
+                    <h3>Los Ríos Profundos</h3>
+                    <p>José María Arguedas</p>
+                    <p class="precio">S/. 100</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="19">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="cincoesquinas">
+                <img src="../img/CincoEsquinas.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Cinco Esquinas</h3>
+                    <p>Mario Vargas Llosa</p>
+                    <p class="precio">S/. 90</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="20">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="../Index/index.html">Inicio</a></li>
+                    <li><a href="../Index/index.html#NuestrasTiendas">Nustras Tiendas</a></li>
+                    <li><a href="../Index/index.html#nosotros">Nosotros</a></li>
+                    <li><a href="../Index/Explora.html">Explora</a></li>
+                    <li><a href="../Index/Preguntas.html">Preguntas Frecuentes</a></li>
+                    <li><a href="../Index/Reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Siguenos en</h3>
+                <div class="footer_imgs">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../imgVisitanos/Instagram.png" alt="">Instagram</a>
+                    <a href="https://www.tiktok.com/" target="_blank"><img src="../imgVisitanos/tiktok.webp" alt="">TikTok</a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../imgVisitanos/facebook.png" alt="">facebook</a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../imgVisitanos/youtube.png" alt="">YouTube</a>
+                </div>
+            </div>
+
+            <div class="link">
+                <h3>MEDIOS DE PAGO</h3>
+                <div class="footer_imgs footer_imgs-pago">
+                    <img src="../imgVisitanos/bcp.jpg" alt="">
+                    <img src="../imgVisitanos/yape.jpg" alt="">
+                    <img src="../imgVisitanos/interbank.png" alt="">
+                    <img src="../imgVisitanos/mastercard.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="../Script/productos.js"></script>
+</body>
+</html>

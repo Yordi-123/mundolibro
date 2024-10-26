@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/Reclamos.css">
+    <title>Reclamos</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="menu container">
+
+            <a href="#" class="logo"><img src="../img/logo.png" alt="" width="40px"></a>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="menu_item" href="../Index/index.html">Inicio</a></li>
+                    <li><a class="menu_item" href="../Index/index.html#nosotros">Nosotros</a></li>
+                    <li><a class="menu_item" href="../Index/Productos.html">Productos</a></li>
+                    <li><a class="menu_item" href="../Index/Explora.html">Explora</a></li>
+                    <li><a class="menu_item" href="../Index/Preguntas.html">Preguntas Frecuentes</a></li>
+                    <li><a class="menu_item" href="../Index/Reclamos.html">Reclamos</a></li>
+                </ul>
+            </nav>        
+        </div>
+    </header>
+
+    <section class="reclamos">
+
+        <article id="izquierda">
+            <h2>Completa el<span> Siguiente Formulario</span></h2>
+            <div id="logo-contacto">
+                <img src="../img/logo.png" alt="logo de la empresa">
+            </div>
+            <h3><span> En MundoLibro</span> valoramos su opinión. Si ha tenido algún inconveniente o desea hacernos llegar una sugerencia, estamos aquí para escucharle. </h3>
+        </article>
+
+        <article id="derecha">
+            <div class="form-content">
+                <form id="reclamoForm"  onsubmit="return validarFormulario()">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" value="mundolibro2024@gmail.com" readonly>
+
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="subject" id="subject" required>
+
+                    <label for="coments">Reclamo</label>
+                    <textarea name="coments" id="coments" cols="30" rows="5" required></textarea>
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </div>
+            
+
+            
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="../Index/index.html">Inicio</a></li>
+                    <li><a href="../Index/index.html#NuestrasTiendas">Nustras Tiendas</a></li>
+                    <li><a href="../Index/index.html#nosotros">Nosotros</a></li>
+                    <li><a href="../Index/Productos.html">Productos</a></li>
+                    <li><a href="../Index/Explora.html">Explora</a></li>
+                    <li><a href="../Index/Preguntas.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Siguenos en</h3>
+                <div class="footer_imgs">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../imgVisitanos/Instagram.png" alt="">Instagram</a>
+                    <a href="https://www.tiktok.com/" target="_blank"><img src="../imgVisitanos/tiktok.webp" alt="">TikTok</a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../imgVisitanos/facebook.png" alt="">facebook</a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../imgVisitanos/youtube.png" alt="">YouTube</a>
+                </div>
+            </div>
+
+            <div class="link">
+                <h3>MEDIOS DE PAGO</h3>
+                <div class="footer_imgs footer_imgs-pago">
+                    <img src="../imgVisitanos/bcp.jpg" alt="">
+                    <img src="../imgVisitanos/yape.jpg" alt="">
+                    <img src="../imgVisitanos/interbank.png" alt="">
+                    <img src="../imgVisitanos/mastercard.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="../Script/Reclamos.js"></script>
+</body>
+</html>
